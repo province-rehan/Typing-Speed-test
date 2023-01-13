@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+    <section class="container bg-light">
+        <h2 class="my-5 text-center">Blog Page</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is the difference Between Local Storage and Session Storage?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The difference between sessionStorage and localStorage is that, localStorage data does not
+                        expire.On the other hand, sessionStorage data is cleared when the page session ends. Local
+                        storage is a Clint side storage data.When we store data in server side we use session storage.
+                        Page sessions are valid for only one tab at a time. So, if a user has four tabs open, each one
+                        will have its own page session. Local storage is not session-based, the data can be cleared via
+                        javascript.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What is the difference between global scope and block scope?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        A variable can be declared inside or outside a block. If a variable is declared outside all
+                        functions or curly braces, it exists in the global scope. The global variables can be accessed
+                        from anywhere in the program, including inside blocks.
+                        Whereas statement within a curly brace is a block scope and the block scope does not apply to
+                        var keyword. Const and Let can define scope to block statements.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How does Event loop works in javascript?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The event loop is a mechanism that allows JavaScript to handle ascynchronous operations. When an
+                        asynchronous task is started, the event loop will start running. Once the task is completed, the
+                        event loop will again check for any other tasks that need to be executed. The Event Loop
+                        monitors the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will
+                        take the first event from the queue and will push it to the Call Stack ant it runs the function.
+                        Thus the event works.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingfour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThre" aria-expanded="false" aria-controls="collapseThre">
+                        What are the causes for getting Undefined in javascript?
+                    </button>
+                </h2>
+                <div id="collapseThre" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        There are some causes of getting Undefined. These are:
+                        <ul>
+                            <li> Uninitialized variables</li>
+                            <li> Function with no return</li>
+                            <li>Parameter that is not passed</li>
+                            <li>Parameter that is not passed</li>
+                            <li>Accessing array element outside of it's index range.</li>
+                            <li>Deleting an element inside of an array.</li>
+                            <li>Set a variable's value undefined.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
